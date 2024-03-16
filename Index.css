@@ -1,0 +1,133 @@
+:root{
+    --branco-principal: #ffffff;
+    --cinza-segundario: #C0C0C0;
+    --botaoa-azul:      #167BF7;
+    --cor-fundo:        #00030C;
+    --fonte-principal: 'Inter';
+}
+body{
+    background-color: var(--cor-fundo);
+    color: var(--branco-principal);
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+.principal{
+    background-image: url(img/Background.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    align-items: center;
+    text-align: center;
+}
+.container{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 50% 50%;
+}
+.container__botao{
+    background-color: var(--botaoa-azul);
+    border-radius: 5px;
+    padding: 1em;
+    color: var(--branco-principal);
+    display: block;
+    text-decoration: none;
+    margin-bottom: 1em;
+}
+.botao_secundario{
+    background-color:transparent ;
+    border: 2px white solid; 
+}
+.container__aviso{
+    font-size: 12px;
+    color: var(--cinza-segundario);
+}
+.container--titulo{
+    font-size: 28px;
+    height: 700;
+}
+.container__imagem{
+    margin: 1em 0 2em 0;
+}
+.container__caixa{
+    margin: 0 6em   ;
+}
+.secundario__imagem{
+    width: 80%;
+}
+.secundario{
+    align-items: center;
+    margin: 0 10em;
+}
+.descricao__titulo{
+    font-weight: 700;
+    font-size: 49px;
+    margin-bottom: 0.1em;
+}
+.descricao__texto{
+
+    var:var(--cinza-segundario)
+}
+.secundario__botao{
+    display: inline-block;
+    margin-top: 1em;
+}
+.container__descricao{
+    padding: 2em;
+}
+.dispositivos__lista{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 5em 0;
+}
+.dispositivos{
+    text-align: center;
+}
+.dispositivos__titulo{
+    font-size: 48px;
+    font-weight: 700;
+}
+.lista_item{
+    font-size: 32px;
+    font-weight:700;
+}
+.rodape{
+    display: inline-block;
+    text-align: center;
+}
+.rodape__logo{
+    text-align: center;
+}
+.rodape__lista{
+    display: flex;
+    justify-content: center;
+    margin: 3em 0;  
+}
+.lista__link{
+    color: var(--branco-principal);
+    list-style: none;
+    text-decoration:none;
+    padding:7px ;
+}
+.lista__link a{
+    color: var(--branco-principal);
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 400;
+}
+.lista__link a:hover{
+    color: var(--botaoa-azul);
+}
+.lista__link a:active{
+    color: var(--cinza-segundario);
+}
+.rodape__texto{
+    margin: 0 5em 2em 5em;
+    color: var(--cinza-segundario);
+    font-size: 14px;
+    font-weight: 400;
+}
